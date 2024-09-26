@@ -1,0 +1,81 @@
+.slider-container {
+  width: 80vw;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  min-width: 100%;
+  /* padding: 0 var(--gap); */
+  gap: var(--gap);
+  height: 80%;
+  margin-bottom: 80px;
+}
+
+.slide {
+  min-width: calc(
+    (100% - var(--gap) * (var(--slides-per-view) - 1)) / var(--slides-per-view)
+  );
+  /* background-color: #3498db; */
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  /* margin: 0 var(--gap); */
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  top: 35%;
+  padding-top: 20px;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px; /* Distance from the bottom of the slider */
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 2px; /* Space between dots */
+  z-index: 1000; /* Make sure dots are above the slider */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #3498db;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}

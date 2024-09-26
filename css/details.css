@@ -1,0 +1,85 @@
+.go-back {
+  padding: 30px 60px;
+}
+
+.back {
+  background-color: rgb(5, 15, 25);
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid gold;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.details {
+  padding: 20px 60px;
+  display: flex;
+  gap: 60px;
+}
+
+.details div > * {
+  margin-top: 20px;
+}
+
+.details div h1 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.fa-star {
+  margin-right: 6px;
+  color: gold;
+}
+
+.details .genres {
+  list-style: none;
+  margin-top: 5px;
+}
+
+.details div a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgb(5, 15, 25);
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid gold;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.back:hover,
+.details div a:hover {
+  transition: 0.5s;
+  background-color: gold;
+}
+
+.info h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gold {
+  color: gold;
+}
+
+.info p {
+  padding: 10px 0;
+  margin: 10px 50px;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.5);
+}
+
+.info .pc {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.info .pc2 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+img {
+  height: 100%;
+  width: 400px;
+}
